@@ -1,0 +1,70 @@
+﻿body
+{
+
+}
+header {
+    background-color: black;
+}
+#header_container {
+    display: grid;
+    padding: 1em;
+    grid-template-columns: 100%;
+}
+#wwr_knife {
+    width: 100%;
+    max-height: 100px;
+}
+#header_text h1 {
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+}
+#header_text h2 {
+    color: gray;
+    text-align: center;
+}
+.italic {
+    font-style: oblique;
+}
+.photos {
+    margin: auto;
+    padding-top: 1em;
+}
+.headshot {
+    max-height: 200px;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1em .25em .5em;
+    margin-top: 2em;
+}
+#footer_images {
+    background-image: url("images/wwr_knife_pic.svg");
+    background-repeat: repeat;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 3em;
+}
+
+/*Responsive*/
+@media only screen and (min-width: 501px) {
+    #header_container {
+        padding: .5em 0em .5em;
+        grid-template-columns: 20% 80%;
+        align-items: center;
+    }
+    #wwr_knife {
+        width: 100%;
+        max-height: 200px;
+        padding: 0em;
+    }
+    #header_text h1 {
+        font-size: 8vw;
+        line-height: .9em;
+    }
+    
+    #header_text {
+        padding-right: 5%;
+    }
+}
